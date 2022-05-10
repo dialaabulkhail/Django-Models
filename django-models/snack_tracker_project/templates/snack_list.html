@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %} Snacks List {% endblock %}
+
+{% block content %}
+{% for snack in snack_list %}
+<ul>
+<li><h3><a class= "nav" href="{% url 'snack_detail' pk=snack.pk %}">{{snack.name}}</a></h3></li>
+</ul>
+        
+    
+
+
+<style>
+    a { 
+        color: rgb(189, 76, 41);
+        text-decoration: None;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+    }
+    a:hover {
+        color: burlywood;
+    }
+    table {
+        margin: 30px;
+        padding: 15px;
+        text-align: left;
+
+    }
+</style>
+</table>
+
+
+{% endfor %}
+{% endblock %}

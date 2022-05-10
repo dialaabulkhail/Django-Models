@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<h1 class="header">{% block title %}{% endblock %}</h1>
+
+<body>
+    {% block content %}{% endblock %}
+</body>
+<footer>
+    <p>All Rights Reserved</p>
+</footer>
+<style>
+    h1 {
+        background-color: rgb(180, 89, 53);
+        color: rgb(255, 255, 255);
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+
+    footer {   
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(19, 0, 0, 0.199);
+        color: rgb(255, 255, 255);
+        text-align: center;  
+        }
+</style>
+</html>

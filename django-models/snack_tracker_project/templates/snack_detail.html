@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %} Snack Details {% endblock %}
+
+{% block content %}
+
+<table>
+    <tr>
+        <th>Name</th> 
+        <th>Description</th>
+        <th>purchaser</th>
+    </tr>
+    <tr>
+        <td>{{snack.name}}</td>
+        <td>{{snack.description}}</td>
+        <td>{{snack.purchaser}}</td>
+    </tr>
+
+    
+
+    <style>
+        th, td {
+            margin: 30px;
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(170, 52, 6, 0.466);
+        }
+      
+    </style>
+</table>
+{% endblock %}
